@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://d2yfc83olwat3"]
 
-[ext_resource type="Texture2D" uid="uid://p33qm3sf2dw7" path="res://icon.svg" id="1_aup5q"]
 [ext_resource type="Script" uid="uid://b4bbcfoj8tpdu" path="res://MenuInferior.gd" id="1_g7cfe"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g7cfe"]
+bg_color = Color(0.87, 0.87, 0.87, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7b4do"]
 bg_color = Color(0.6509804, 0.6509804, 0.6509804, 1)
@@ -68,8 +70,11 @@ corner_radius_bottom_left = 10
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ituqd"]
 bg_color = Color(1, 1, 1, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0duit"]
-bg_color = Color(0, 0, 0, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g5jlx"]
+corner_radius_top_left = 180
+corner_radius_top_right = 180
+corner_radius_bottom_right = 180
+corner_radius_bottom_left = 180
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v63ph"]
 bg_color = Color(0.41000003, 0.6459999, 1, 0.7529412)
@@ -115,8 +120,6 @@ corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i6bh8"]
-
 [node name="Control" type="Control" unique_id=1823499041]
 layout_mode = 3
 anchors_preset = 15
@@ -135,6 +138,78 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_lock_ = true
+
+[node name="MenuInferior" type="Panel" parent="." unique_id=2101960452]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0
+anchor_right = 0.9990001
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -125.0
+offset_right = -0.2800293
+theme_override_styles/panel = SubResource("StyleBoxFlat_g7cfe")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MenuInferior" unique_id=124612816]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.001
+anchor_bottom = 1.0
+offset_right = -0.7180176
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MenuInferior/HBoxContainer" unique_id=640039213]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+
+[node name="Inicio" type="Button" parent="MenuInferior/HBoxContainer/VBoxContainer" unique_id=1445078259]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="MenuInferior/HBoxContainer/VBoxContainer" unique_id=111510158]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Inicio"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="MenuInferior/HBoxContainer" unique_id=93014928]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+
+[node name="Progresso" type="Button" parent="MenuInferior/HBoxContainer/VBoxContainer3" unique_id=882295062]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="MenuInferior/HBoxContainer/VBoxContainer3" unique_id=727766968]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Progresso"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MenuInferior/HBoxContainer" unique_id=143898227]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+
+[node name="Perfil" type="Button" parent="MenuInferior/HBoxContainer/VBoxContainer2" unique_id=1289767899]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="MenuInferior/HBoxContainer/VBoxContainer2" unique_id=1932727213]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Perfil"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="NotificaçãoGeral" type="Button" parent="." unique_id=511780768]
 layout_mode = 1
@@ -230,64 +305,56 @@ language = "pt_BR"
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1948623266]
 layout_mode = 1
 anchors_preset = -1
-anchor_top = 0.39400002
+anchor_top = 0.404
 anchor_right = 1.0
-anchor_bottom = 0.39400002
-offset_top = -64.32004
-offset_right = 200.0
-offset_bottom = 63.679962
+anchor_bottom = 0.404
+offset_top = -56.120026
+offset_right = -266.0
+offset_bottom = 14.54248
+scale = Vector2(1.585, 1.585)
+theme_override_constants/separation = 0
 
-[node name="TextureRect" type="TextureRect" parent="HBoxContainer" unique_id=1376232672]
+[node name="Panel" type="Panel" parent="HBoxContainer" unique_id=1101968853]
+custom_maximum_size = Vector2(65, 65)
 layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource("1_aup5q")
-stretch_mode = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_g5jlx")
 
-[node name="TextureRect2" type="TextureRect" parent="HBoxContainer" unique_id=1010158681]
+[node name="Panel2" type="Panel" parent="HBoxContainer" unique_id=149677464]
+custom_maximum_size = Vector2(65, 65)
 layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource("1_aup5q")
-stretch_mode = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_g5jlx")
 
-[node name="TextureRect3" type="TextureRect" parent="HBoxContainer" unique_id=1392799806]
+[node name="Panel3" type="Panel" parent="HBoxContainer" unique_id=1847181791]
+custom_maximum_size = Vector2(65, 65)
 layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource("1_aup5q")
-stretch_mode = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_g5jlx")
 
-[node name="TextureRect4" type="TextureRect" parent="HBoxContainer" unique_id=1473584585]
+[node name="Panel4" type="Panel" parent="HBoxContainer" unique_id=1625820014]
+custom_maximum_size = Vector2(65, 65)
 layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource("1_aup5q")
-stretch_mode = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_g5jlx")
 
-[node name="TextureRect5" type="TextureRect" parent="HBoxContainer" unique_id=1221214857]
+[node name="Panel5" type="Panel" parent="HBoxContainer" unique_id=1689119974]
+custom_maximum_size = Vector2(65, 65)
 layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource("1_aup5q")
-stretch_mode = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_g5jlx")
 
-[node name="TextureRect6" type="TextureRect" parent="HBoxContainer" unique_id=980687994]
+[node name="Panel6" type="Panel" parent="HBoxContainer" unique_id=515138146]
+custom_maximum_size = Vector2(65, 65)
 layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource("1_aup5q")
-stretch_mode = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_g5jlx")
 
-[node name="TextureRect7" type="TextureRect" parent="HBoxContainer" unique_id=1265192867]
+[node name="Panel7" type="Panel" parent="HBoxContainer" unique_id=1306006162]
+custom_maximum_size = Vector2(65, 65)
 layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource("1_aup5q")
-stretch_mode = 3
-
-[node name="Panel" type="Panel" parent="." unique_id=1905608360]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.467
-anchor_right = 1.0
-anchor_bottom = 0.467
-offset_top = -5.76001
-offset_bottom = 6.23999
-theme_override_styles/panel = SubResource("StyleBoxFlat_0duit")
+theme_override_styles/panel = SubResource("StyleBoxFlat_g5jlx")
 
 [node name="PainelAgua" type="Panel" parent="." unique_id=28653369]
 layout_mode = 1
@@ -364,58 +431,6 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_nj3pw")
 text = "Registrar água"
 icon_alignment = 1
 
-[node name="MenuInferior" type="Panel" parent="." unique_id=2101960452]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 1.0
-anchor_right = 0.9990001
-anchor_bottom = 1.0
-offset_left = 1.0
-offset_top = -125.0
-offset_right = -0.2800293
-theme_override_styles/panel = SubResource("StyleBoxFlat_i6bh8")
-
-[node name="HBoxContainer" type="HBoxContainer" parent="MenuInferior" unique_id=124612816]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.001
-anchor_bottom = 1.0
-offset_right = -0.7180176
-
-[node name="VBoxContainer" type="VBoxContainer" parent="MenuInferior/HBoxContainer" unique_id=640039213]
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 4
-
-[node name="Inicio" type="Button" parent="MenuInferior/HBoxContainer/VBoxContainer" unique_id=1445078259]
-custom_minimum_size = Vector2(70, 70)
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 4
-
-[node name="Label" type="Label" parent="MenuInferior/HBoxContainer/VBoxContainer" unique_id=111510158]
-layout_mode = 2
-theme_override_font_sizes/font_size = 20
-text = "Inicio"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="VBoxContainer2" type="VBoxContainer" parent="MenuInferior/HBoxContainer" unique_id=143898227]
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 4
-
-[node name="Perfil" type="Button" parent="MenuInferior/HBoxContainer/VBoxContainer2" unique_id=1289767899]
-custom_minimum_size = Vector2(70, 70)
-layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 4
-
-[node name="Label" type="Label" parent="MenuInferior/HBoxContainer/VBoxContainer2" unique_id=1932727213]
-layout_mode = 2
-theme_override_font_sizes/font_size = 20
-text = "Perfil"
-horizontal_alignment = 1
-vertical_alignment = 1
-
+[connection signal="button_up" from="MenuInferior/HBoxContainer/VBoxContainer/Inicio" to="." method="_on_inicio_button_up"]
+[connection signal="button_up" from="MenuInferior/HBoxContainer/VBoxContainer3/Progresso" to="." method="_on_progresso_button_up"]
 [connection signal="button_up" from="MenuInferior/HBoxContainer/VBoxContainer2/Perfil" to="." method="_on_perfil_button_up"]

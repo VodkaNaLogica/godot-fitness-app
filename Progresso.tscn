@@ -1,0 +1,189 @@
+[gd_scene format=3 uid="uid://c4xrie8gq42bd"]
+
+[ext_resource type="Script" uid="uid://b4bbcfoj8tpdu" path="res://MenuInferior.gd" id="1_ium2y"]
+[ext_resource type="Texture2D" uid="uid://p33qm3sf2dw7" path="res://icon.svg" id="2_2rdnv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2rdnv"]
+bg_color = Color(0.87, 0.87, 0.87, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xho8w"]
+bg_color = Color(0.9545019, 0.9545019, 0.9545018, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="Control" type="Control" unique_id=1534917601]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ium2y")
+metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1308272527]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="MenuInferior" type="Panel" parent="." unique_id=1919738719]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0
+anchor_right = 0.9990001
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -125.0
+offset_right = -0.2800293
+theme_override_styles/panel = SubResource("StyleBoxFlat_2rdnv")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MenuInferior" unique_id=2112834268]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.001
+anchor_bottom = 1.0
+offset_right = -0.7180176
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MenuInferior/HBoxContainer" unique_id=571113243]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+
+[node name="Inicio" type="Button" parent="MenuInferior/HBoxContainer/VBoxContainer" unique_id=1608642419]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="MenuInferior/HBoxContainer/VBoxContainer" unique_id=1952851846]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Inicio"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="MenuInferior/HBoxContainer" unique_id=286484506]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+
+[node name="Progresso" type="Button" parent="MenuInferior/HBoxContainer/VBoxContainer3" unique_id=1674659299]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="MenuInferior/HBoxContainer/VBoxContainer3" unique_id=1110158856]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Progresso"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MenuInferior/HBoxContainer" unique_id=643489694]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+
+[node name="Perfil" type="Button" parent="MenuInferior/HBoxContainer/VBoxContainer2" unique_id=331800227]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="MenuInferior/HBoxContainer/VBoxContainer2" unique_id=1458361012]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Perfil"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LabelPerfil" type="Label" parent="." unique_id=1729520249]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.014
+anchor_top = 0.016
+anchor_right = 0.014
+anchor_bottom = 0.016
+offset_left = -0.07999992
+offset_top = 0.51999855
+offset_right = 335.92
+offset_bottom = 181.52
+scale = Vector2(0.28, 0.28)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 132
+text = "Progesso"
+
+[node name="PainelDeTreinoAtual" type="Panel" parent="." unique_id=2134065618]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.001
+anchor_top = 0.076000005
+anchor_right = 1.0
+anchor_bottom = 0.245
+offset_left = 9.28
+offset_top = -0.2800064
+offset_right = -10.0
+offset_bottom = 0.3999939
+theme_override_styles/panel = SubResource("StyleBoxFlat_xho8w")
+
+[node name="SequenciaAtual" type="Label" parent="PainelDeTreinoAtual" unique_id=261074971]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 246.0
+offset_bottom = 57.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Sequência atual"
+
+[node name="TextureRect" type="TextureRect" parent="PainelDeTreinoAtual" unique_id=1274493333]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.36400002
+anchor_right = 0.043
+anchor_bottom = 0.88000005
+offset_left = 30.0
+offset_top = 0.011993408
+offset_right = 127.9
+offset_bottom = 16.039993
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("2_2rdnv")
+
+[node name="Dias" type="Label" parent="PainelDeTreinoAtual" unique_id=2365070]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.43800002
+anchor_right = 0.26000002
+anchor_bottom = 0.63100004
+offset_left = 190.0
+offset_top = -0.04600525
+offset_right = 130.99998
+offset_bottom = 0.07299805
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "XXX dias"
+
+[node name="Continue" type="Label" parent="PainelDeTreinoAtual" unique_id=1218168426]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.009000001
+anchor_top = 0.62200004
+anchor_right = 0.27100003
+anchor_bottom = 0.72800004
+offset_left = 183.7
+offset_top = 0.025985718
+offset_right = 40.299988
+offset_bottom = 0.023986816
+theme_override_colors/font_color = Color(0.23, 0.23, 0.23, 1)
+text = "Continue assim!"
+
+[connection signal="button_up" from="MenuInferior/HBoxContainer/VBoxContainer/Inicio" to="." method="_on_inicio_button_up"]
+[connection signal="button_up" from="MenuInferior/HBoxContainer/VBoxContainer3/Progresso" to="." method="_on_progresso_button_up"]
+[connection signal="button_up" from="MenuInferior/HBoxContainer/VBoxContainer2/Perfil" to="." method="_on_perfil_button_up"]
