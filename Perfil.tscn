@@ -1,0 +1,272 @@
+[gd_scene format=3 uid="uid://chbjmyboi3enr"]
+
+[ext_resource type="Texture2D" uid="uid://p33qm3sf2dw7" path="res://icon.svg" id="1_wrk8b"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0duit"]
+bg_color = Color(0.8117647, 0.8117647, 0.8117647, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mars6"]
+bg_color = Color(0.8117647, 0.8117647, 0.8117647, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wrk8b"]
+bg_color = Color(0.78, 0.78, 0.78, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6h842"]
+bg_color = Color(0.87, 0.87, 0.87, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6h842"]
+load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_odffq"]
+
+[node name="Control" type="Control" unique_id=1211247153]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=597336485]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="LabelPerfil" type="Label" parent="." unique_id=955443279]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.028
+anchor_top = 0.034
+anchor_right = 0.028
+anchor_bottom = 0.034
+offset_left = -0.15999985
+offset_top = -0.5200043
+offset_right = 335.84
+offset_bottom = 180.48
+scale = Vector2(0.28, 0.28)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 132
+text = "Perfil"
+
+[node name="Configurações" type="Button" parent="." unique_id=1622886289]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.97200006
+anchor_top = 0.034
+anchor_right = 0.97200006
+anchor_bottom = 0.08800001
+offset_left = -69.84003
+offset_top = -0.5200043
+offset_right = 0.15997314
+offset_bottom = 0.35999298
+
+[node name="FotoDePerfil" type="Panel" parent="." unique_id=1759929553]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.123
+anchor_right = 0.5
+anchor_bottom = 0.30200002
+offset_left = -115.0
+offset_top = -0.44000244
+offset_right = 115.0
+offset_bottom = 0.43997192
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1169155674]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.38200003
+anchor_right = 1.0
+anchor_bottom = 0.38200003
+offset_left = 93.0
+offset_top = -46.960022
+offset_right = -93.0
+offset_bottom = 46.039978
+theme_override_constants/separation = 8
+
+[node name="Nivel" type="Panel" parent="HBoxContainer" unique_id=1188235702]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_0duit")
+
+[node name="Nivel" type="Label" parent="HBoxContainer/Nivel" unique_id=1216975626]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="DesdeData" type="Panel" parent="HBoxContainer" unique_id=906433859]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_0duit")
+
+[node name="Desde" type="Label" parent="HBoxContainer/DesdeData" unique_id=1144819192]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=273435158]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.47800002
+anchor_right = 1.0
+anchor_bottom = 0.47800002
+offset_left = 93.0
+offset_top = -47.840027
+offset_right = -93.0
+offset_bottom = 32.159973
+theme_override_constants/separation = 8
+
+[node name="DadosPessoais" type="Button" parent="VBoxContainer" unique_id=139703737]
+custom_minimum_size = Vector2(0, 95)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.19, 0.19, 0.19, 1)
+theme_override_colors/font_pressed_color = Color(0.1882353, 0.1882353, 0.1882353, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.1882353, 0.1882353, 0.1882353, 1)
+theme_override_constants/icon_max_width = 73
+theme_override_constants/align_to_largest_stylebox = 1
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_mars6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wrk8b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6h842")
+text = "Dados Pessoais"
+icon = SubResource("CompressedTexture2D_6h842")
+alignment = 0
+
+[node name="Metas" type="Button" parent="VBoxContainer" unique_id=851617776]
+custom_minimum_size = Vector2(0, 95)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.1882353, 0.1882353, 0.1882353, 1)
+theme_override_colors/font_pressed_color = Color(0.1882353, 0.1882353, 0.1882353, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.1882353, 0.1882353, 0.1882353, 1)
+theme_override_constants/icon_max_width = 73
+theme_override_constants/align_to_largest_stylebox = 1
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_mars6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wrk8b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6h842")
+text = "Metas"
+icon = ExtResource("1_wrk8b")
+alignment = 0
+
+[node name="Configurações" type="Button" parent="VBoxContainer" unique_id=1679319371]
+custom_minimum_size = Vector2(0, 95)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.1882353, 0.1882353, 0.1882353, 1)
+theme_override_colors/font_pressed_color = Color(0.1882353, 0.1882353, 0.1882353, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.1882353, 0.1882353, 0.1882353, 1)
+theme_override_constants/icon_max_width = 73
+theme_override_constants/align_to_largest_stylebox = 1
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_mars6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wrk8b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6h842")
+text = "Configurações"
+icon = ExtResource("1_wrk8b")
+alignment = 0
+
+[node name="AjudaESuporte" type="Button" parent="VBoxContainer" unique_id=1237495280]
+custom_minimum_size = Vector2(0, 95)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.1882353, 0.1882353, 0.1882353, 1)
+theme_override_colors/font_pressed_color = Color(0.1882353, 0.1882353, 0.1882353, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.1882353, 0.1882353, 0.1882353, 1)
+theme_override_constants/icon_max_width = 73
+theme_override_constants/align_to_largest_stylebox = 1
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_mars6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wrk8b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6h842")
+text = "Ajuda e suporte"
+icon = ExtResource("1_wrk8b")
+alignment = 0
+
+[node name="Sair" type="Button" parent="VBoxContainer" unique_id=1103584074]
+custom_minimum_size = Vector2(0, 95)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.1882353, 0.1882353, 0.1882353, 1)
+theme_override_colors/font_pressed_color = Color(0.1882353, 0.1882353, 0.1882353, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.1882353, 0.1882353, 0.1882353, 1)
+theme_override_constants/icon_max_width = 73
+theme_override_constants/align_to_largest_stylebox = 1
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_mars6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_wrk8b")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6h842")
+text = "Sair"
+icon = ExtResource("1_wrk8b")
+alignment = 0
+
+[node name="MenuInferior" type="Panel" parent="." unique_id=2054990962]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0
+anchor_right = 0.9990001
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -125.0
+offset_right = -0.2800293
+theme_override_styles/panel = SubResource("StyleBoxFlat_odffq")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MenuInferior" unique_id=1560192987]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.001
+anchor_bottom = 1.0
+offset_right = -0.7180176
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MenuInferior/HBoxContainer" unique_id=172883926]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+
+[node name="Inicio" type="Button" parent="MenuInferior/HBoxContainer/VBoxContainer" unique_id=1345955242]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="MenuInferior/HBoxContainer/VBoxContainer" unique_id=1609500588]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Inicio"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MenuInferior/HBoxContainer" unique_id=164486967]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+
+[node name="Inicio" type="Button" parent="MenuInferior/HBoxContainer/VBoxContainer2" unique_id=153060143]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="MenuInferior/HBoxContainer/VBoxContainer2" unique_id=2060991051]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Perfil"
+horizontal_alignment = 1
+vertical_alignment = 1
